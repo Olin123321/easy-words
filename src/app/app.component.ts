@@ -8,14 +8,9 @@ import { WordsService } from './services/words.service';
 })
 export class AppComponent {
   
+  nouns = this.wordsService.getNouns();
+  verbs = this.wordsService.getVerbs();
+
   constructor(private wordsService: WordsService) { }
 
-  get nouns(){
-    return this.wordsService.getNouns();
-  }
-
-  get verbs(){
-    return this.wordsService.getVerbs();
-  }
-    
 }
