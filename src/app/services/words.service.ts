@@ -9,7 +9,7 @@ export class WordsService {
 
   private words: WordType[] = [];
   private nouns: WordType[] = [];
-  private verbs: WordType[] = []
+  private verbs: WordType[] = [];
 
   constructor() { 
     this.words = WORDS;
